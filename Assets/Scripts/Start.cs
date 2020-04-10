@@ -10,4 +10,11 @@ public class Start : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void Update()
+    {
+        if(Time.timeScale == 0.0f)
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 }
